@@ -273,11 +273,11 @@ footer .copyright{
 .products2 li .image{
 	text-align: center;
 	margin: 20px 0 40px 0;
-    height: 272px;
+    height: 200px;
     max-width: 100%;
 }
-.products2 li .image{
-    max-height: 272px;
+.products2 li .image img{
+    max-height: 200px;
 }
 .products2 li p.name{
 	font-family: 'OpenSans', Arial;
