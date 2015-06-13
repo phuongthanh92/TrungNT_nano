@@ -561,4 +561,154 @@ ul.menu{
 .fullwidthbanner li{
 	cursor: pointer;
 }
-
+.account-login .new-users {
+    background: url(../images/bg-login.gif) no-repeat right bottom #ffffff;
+    border: 1px solid #ececec;
+    padding: 20px;
+    min-height: 260px;
+    overflow: hidden;
+}
+.account-login .new-users .content{
+    background: transparent;
+}
+.account-login .new-users-wrapper {
+    margin-bottom: 20px;
+}
+.account-login .new-users h2 {
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #e34b40;
+}
+.account-login .new-users p {
+    font-size: 12px;
+    color: #7f7f7f;
+    line-height: 18px;
+    padding: 13px 0 12px 0;
+}
+.buttons-set {
+    clear: both;
+    margin: 5px 0 0;
+    padding: 5px 0 5px 0;
+}
+.buttons-set button.button {
+    float: left;
+    border: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d94a35', endColorstr='#d94a35');
+    background: -webkit-gradient(linear, left top, left bottom, from(#d94a35), to(#d94a35));
+    background: -moz-linear-gradient(top, #d94a35, #d94a35);
+    background: -o-linear-gradient(top, #d94a35, #d94a35);
+    background: -ms-linear-gradient(top, #d94a35, #d94a35);
+    color: #fff;
+    font-size: 13px;
+    line-height: 40px;
+    height: 39px;
+    font-weight: bold;
+    padding: 0 20px;
+    margin-right: 10px;
+}
+.account-login .registered-users h2 {
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #e34b40;
+}
+.account-login .registered-users p {
+    font-size: 12px;
+    color: #7f7f7f;
+    line-height: 18px;
+    padding: 13px 0 12px 0;
+}
+.form-list label {
+    float: left;
+    color: #515050000;
+    font-weight: bold;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.form-list .input-box {
+    display: block;
+    clear: both;
+    margin-bottom: 7px;
+    width: 260px;
+}
+.account-login .registered-users {
+    background: url(../images/bg-login-2.gif) no-repeat right bottom #ffffff;
+    border: 1px solid #ececec;
+    padding: 20px;
+    min-height: 260px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.account-login .registered-users .content{
+    background: transparent;
+}
+p.required {
+    padding: 0px 0 5px 0;
+    color: #e34b40 !important;
+    float: right;
+    font-weight: 600;
+}
+.account-login .buttons-set {
+    clear: none;
+    margin: -19px 0 0 0;
+    padding: 15px 0px 0px 0px;
+}
+.account-login .registered-users .f-left {
+    float: none!important;
+    display: table;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7f7f7f;
+    text-decoration: none;
+    padding-bottom: 12px;
+}
+.account-login .registered-users .f-left:hover{
+    color: #e34b40;
+}
+.cart table tbody td{
+    text-align: center;
+}
+.cart input.quantity{
+    width: 30px;
+    padding: 5px 10px;
+}
+.cart table tfoot td{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #000000;
+    padding: 10px;
+}
+.cart button.del-btn{
+    width: 40px;
+    height: 60px;
+    border: none;
+    background: url("../images/cart-delete.png") no-repeat center;
+    background-position: 0 -60px;
+}
+.cart button.del-btn:hover{
+    background-position: 0 0;
+}
+.cart{
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.cart .buttons-set .button{
+    font-size: 16px;
+}
+.order-step li{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #757575;
+    margin-bottom: 10px;
+}
+.order-step li.active{
+    background: #0069b6;
+}
