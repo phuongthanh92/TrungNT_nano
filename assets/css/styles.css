@@ -633,7 +633,10 @@ ul.menu{
     display: block;
     clear: both;
     margin-bottom: 7px;
-    width: 260px;
+}
+.form-list .input-box input{
+    width: 100%;
+    max-width: 320px;
 }
 .account-login .registered-users {
     background: url(../images/bg-login-2.gif) no-repeat right bottom #ffffff;
@@ -669,12 +672,22 @@ p.required {
 .account-login .registered-users .f-left:hover{
     color: #e34b40;
 }
-.cart table tbody td{
+.form-list label.required em {
+    color: #e34b40;
+    float: right;
+    font-style: normal;
+    position: absolute;
+    right: -8px;
+    top: 0;
+}
+.cart table thead th{
     text-align: center;
+    font-size: 16px;
 }
 .cart input.quantity{
     width: 30px;
     padding: 5px 10px;
+    text-align: center;
 }
 .cart table tfoot td{
     font-size: 18px;
@@ -711,4 +724,15 @@ p.required {
 }
 .order-step li.active{
     background: #0069b6;
+}
+
+@media (min-width: 1200px){
+    .span6 {
+         width: 50%;
+
+    }
+    [class*="span"] {
+        float: left;
+        margin-left: 0px;
+    }
 }

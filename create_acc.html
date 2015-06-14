@@ -107,88 +107,53 @@
 </div>
 
 
-<div class="content row-fluid">
+<div class="content">
     <div class="container">
-        <h3 class="title">Giỏ hàng</h3>
+        <h3 class="title">Tạo tài khoản mới</h3>
     </div>
     <div class="container">
-        <div class="cart">
-            <div class="span3">
-                <div class="order-step">
-                    <ul>
-                        <li class="active">Bước 1</li>
-                        <li>Bước 1</li>
-                        <li>Bước 1</li>
-                        <li>Bước 1</li>
-                        <li>Bước 1</li>
-                    </ul>
+        <div class="account-login">
+            <form id="login-form" method="post" action="#">
+                <div class="new-users-wrapper span12">
+                    <div class="col-1 new-users">
+                        <h2>Thông tin cá nhân</h2>
+                        <div class="content">
+                            <ul class="form-list">
+                                <li class="span5">
+                                    <label class="required" for="username"><em>*</em>Tên đăng nhập</label>
+                                    <div class="input-box">
+                                        <input type="text" title="text" class="input-text required-entry validate-email" id="username" value="" name="login[username]">
+                                    </div>
+                                </li>
+                                <li class="span5">
+                                    <label class="required" for="email"><em>*</em>Email</label>
+                                    <div class="input-box">
+                                        <input type="email" title="Email" class="input-text required-entry validate-email" id="email" value="" name="login[username]">
+                                    </div>
+                                </li>
+                                <li class="span5">
+                                    <label class="required" for="pass"><em>*</em>Password</label>
+                                    <div class="input-box">
+                                        <input type="password" title="Password" id="pass" class="input-text required-entry validate-password" name="login[password]">
+                                    </div>
+                                </li>
+                                <li class="span5">
+                                    <label class="required" for="c_pass"><em>*</em>Xác nhận Password</label>
+                                    <div class="input-box">
+                                        <input type="password" title="Password" id="c_pass" class="input-text required-entry validate-password" name="login[password]">
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                            <p class="required">* Bắt buộc phải điền</p>
+                            <div class="buttons-set">
+                                <button id="send3" name="send" title="Đăng ký" class="button" type="submit"><span><span>Đăng nhập</span></span></button>
+                                <button id="send4" name="send" title="Hủy" class="button" type="reset"><span><span>Hủy</span></span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="span9">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th></th>
-                        <th>Sản phẩm</th>
-                        <th>Thông tin sản phẩm</th>
-                        <th>Giá</th>
-                        <th>Số lượng</th>
-                        <th>Thành tiền</th>
-                        <th>Thao tác</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="item">
-                        <td><input type="checkbox" class="check-list"/><label></label></td>
-                        <td class="product">
-                            <div class="image">
-                                <img src="uploads/products/thumbnails/0f2e0aa9520aaf7ca34e5549b6076c6c.jpg" alt=".." class="img-responsive"/>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="info-item">
-                                <a class="name" href="#">BỘ 6 CÔNG TẮC WTEG56572S-1-G</a>
-                            </div>
-                        </td>
-                        <td>380</td>
-                        <td>
-                            <input class="quantity" type="text" value="2">
-                        </td>
-                        <td>760</td>
-                        <td><button class="del-btn"></button></td>
-                    </tr>
-                    <tr class="item">
-                        <td><input type="checkbox" class="check-list"/><label></label></td>
-                        <td class="product">
-                            <div class="image">
-                                <img src="uploads/products/thumbnails/0f2e0aa9520aaf7ca34e5549b6076c6c.jpg" alt=".." class="img-responsive"/>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="info-item">
-                                <a class="name" href="#">BỘ 6 CÔNG TẮC WTEG56572S-1-G</a>
-                            </div>
-                        </td>
-                        <td>380</td>
-                        <td>
-                            <input class="quantity" type="text" value="2">
-                        </td>
-                        <td>760</td>
-                        <td><button class="del-btn"></button></td>
-                    </tr>
-                    </tbody>
-                    <tfoot>
-                    <tr>
-                        <td colspan="4">Tổng</td>
-                        <td colspan="2">1.000.000 VNĐ</td>
-                    </tr>
-                    </tfoot>
-                </table>
-                <div class="buttons-set">
-                    <button name="send" title="Tiếp tục mua hàng" class="button" type="button">Tiếp tục mua hàng</button>
-                    <button name="send" title="Đặt hàng" class="button" type="submit">Đặt hàng</button>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>
