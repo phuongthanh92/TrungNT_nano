@@ -793,13 +793,9 @@ p.required {
 .banner{
     padding: 20px 0;
 }
-.banner .fullwidthbanner-container img{
-    height: 323px;
-}
+
 .news-list{
     padding: 20px;
-    height: 331px;
-    background: #ffffff;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -900,6 +896,58 @@ p.required {
     color: #404041;
     font-size: 12px;
 }
+.top-link{
+    text-align: right;
+    display: none;
+}
+.top-link.active{
+    display: block;
+}
+.top-link a{
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+    color: #000000;
+}
+.top-link a:hover{
+    color: #0069b6;
+}
+.top-link a:last-child{
+    border-right: none;
+}
+.top-link .user-s a{
+    padding: 0;
+    border-right: none;
+}
+.menu li{
+    border-right: 1px solid #ffffff;
+}
+.banner>.container>.span4{
+    background: #ffffff;
+}
+@media screen and (min-width: 992px){
+    .banner>.container{
+        display: table;
+    }
+    .banner>.container>.span4,.banner>.container>.span8{
+        display: table-cell;
+        max-height: 323px;
+    }
+    .banner>.container>.span4{
+        background: #ffffff;
+    }
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .banner>.container{
+        display: table;
+    }
+    .banner>.container>.span4{
+        display: none;
+    }
+    .banner>.container>.span8{
+        width: 100%;
+        margin: 0;
+    }
+}
 @media screen and (max-width: 767px){
     .dropdown-menu{
         display: none !important;
@@ -920,5 +968,11 @@ p.required {
     }
     .slogan{
         display: none;
+    }
+}
+@media screen and (max-width: 340px){
+    .top-link .user-s{
+        display: block;
+        padding: 10px 0;
     }
 }
