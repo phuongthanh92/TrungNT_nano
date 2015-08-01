@@ -798,7 +798,7 @@ p.required {
 }
 .news-list{
     padding: 20px;
-    height: 323px;
+    height: 331px;
     background: #ffffff;
     box-sizing: border-box;
     overflow: hidden;
@@ -861,7 +861,45 @@ p.required {
 .order-step li img{
     margin-right: 10px;
 }
-
+.top1 .span8 img{
+    height: 65px;
+}
+.logo{
+    float: left;
+}
+.slogan{
+    float: left;
+    margin-top: 10px;
+}
+.slogan .lg-text{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.articles li{
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    clear: both;
+    border-bottom: 1px solid #dcdcdc;
+}
+.jub-pager{
+    overflow: hidden;
+    text-align: center;
+    margin: 30px 0;
+}
+.jub-pager li{
+    display: inline-block;
+    border: 1px solid #404041;
+    margin: 5px 3px;
+}
+.jub-pager li a{
+    display: inline-block;
+    line-height: 18px;
+    padding: 0 6px;
+    color: #404041;
+    font-size: 12px;
+}
 @media screen and (max-width: 767px){
     .dropdown-menu{
         display: none !important;
@@ -879,5 +917,8 @@ p.required {
     }
     .info-com .group label{
         display: block;
+    }
+    .slogan{
+        display: none;
     }
 }
