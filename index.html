@@ -19,7 +19,6 @@
     <script type="text/javascript" src="assets/js/html5.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 
 </head>
@@ -63,7 +62,7 @@
                     <div class="sm-text">Bộ quốc phòng</div>
                 </div>
             </div>
-            <div class="span2"><a href="#"><img src="assets/images/money-icon.png" width="38"
+            <div class="span2"><a href="#myPriceList" role="button" data-toggle="modal"><img src="assets/images/money-icon.png" width="38"
                                                                                      alt="" align="left"/> Bảng giá
                 <br/><span>Xem bảng giá</span></a></div>
             <div class="span2"><img src="assets/images/icon-phone.gif" width="38" alt="" align="left"/> Hotline <br/><span>0909 84 00 28</span>
@@ -124,7 +123,7 @@
 
 <div class="row-fluid banner">
     <div class="container">
-        <div class="span4">
+        <div class="span3">
             <div class="news-list">
                 <h3>Tin tức nổi bật</h3>
                 <ul class="recruitment">
@@ -166,87 +165,43 @@
                 </ul>
             </div>
         </div>
-        <div class="span8">
-            <div class="fullwidthbanner-container">
-                <div class="fullwidthbanner">
-                    <ul>
-                        <li data-transition="slidehorizontal" data-slotamount="10"
-                            data-thumb="uploads/banners/7f38e44ad3819b0c34bb22d743669e7b.jpg">
-                            <img src="uploads/banners/7f38e44ad3819b0c34bb22d743669e7b.jpg" class="img-noborder" alt="">
-                            <span style="display:none;" class="url">http://www.nanoco.com.vn/tin-tuc/tin-tuc-moi/dich-vu-thiet-ke-chieu-sang-mien-phi-la-gi-a96.html</span>
-                        </li>
-                        <li data-transition="slidehorizontal" data-slotamount="10"
-                            data-thumb="uploads/banners/88ad72c6169a06bae906e58895a81f11.png">
-                            <img src="uploads/banners/88ad72c6169a06bae906e58895a81f11.png" class="img-noborder" alt="">
-                            <span style="display:none;" class="url">http://nanoco.com.vn/san-pham/thiet-bi-chieu-sang/den-chum-trang-tri/den-chum-led-hh-laz300319-a256.html</span>
-                        </li>
+        <div class="span3 pull-right">
+            <div class="news-list support">
+                <h3>Thông tin liên lạc</h3>
+                <ul class="recruitment staff">
 
-                    </ul>
-                    <div class="tp-bannertimer"></div>
-                </div>
+                    <li>
+                        Nhân viên kinh doanh 1
+                        <div class="phone"><a href="tel: +84975801462">0975801462</a></div>
+                        <div class="skype"><a href="skype:tenskype?chat">Tên skype</a></div>
+                    </li>
+
+                    <li >
+                        Nhân viên kinh doanh 1
+                        <div class="phone"><a href="tel: +84975801462">0975801462</a></div>
+                        <div class="skype"><a href="skype:tenskype?chat">Tên skype</a></div>
+                    </li>
+
+                </ul>
             </div>
-            <script type="text/javascript" src="assets/js/jquery.themepunch.plugins.min.js"></script>
-            <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
-            <link rel="stylesheet" type="text/css" href="assets/css/revolution.css"/>
-            <script type="text/javascript">
-
-                var tpj = jQuery;
-                tpj.noConflict();
-
-                tpj(document).ready(function () {
-
-                    if (tpj.fn.cssOriginal != undefined)
-                        tpj.fn.css = tpj.fn.cssOriginal;
-
-                    tpj('.fullwidthbanner').revolution(
-                            {
-                                delay: 5000,
-                                startwidth: 1170,
-                                startheight: 500,
-
-                                onHoverStop: "on",           // Stop Banner Timet at Hover on Slide on/off
-
-                                thumbWidth: 100,             // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
-                                thumbHeight: 50,
-                                thumbAmount: 3,
-
-                                hideThumbs: 200,
-                                navigationType: "bullet",          //bullet, thumb, none, both  (No Shadow in Fullwidth Version !)
-                                navigationArrows: "verticalcentered",    //nexttobullets, verticalcentered, none
-                                navigationStyle: "round",        //round,square,navbar
-
-                                touchenabled: "on",            // Enable Swipe Function : on/off
-
-                                navOffsetHorizontal: 10,
-                                navOffsetVertical: 20,
-
-                                stopAtSlide: -1,             // Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
-                                stopAfterLoops: -1,            // Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
-
-
-                                fullWidth: "on",
-
-                                shadow: 0               //0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
-
-                            });
-                });
-
-
-                jQuery(function () {
-
-                    jQuery('.fullwidthbanner li').click(function () {
-
-                        var url = jQuery(this).find('.url').text();
-
-                        if (url.length > 0) {
-                            window.location = url;
-                        }
-
-                    });
-                });
-
-
-            </script>
+        </div>
+        <div class="span6">
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item"><img src="uploads/banners/7f38e44ad3819b0c34bb22d743669e7b.jpg" class="img-noborder" alt=""></div>
+                    <div class="item"><img src="uploads/banners/7f38e44ad3819b0c34bb22d743669e7b.jpg" class="img-noborder" alt=""></div>
+                    <div class="item"><img src="uploads/banners/7f38e44ad3819b0c34bb22d743669e7b.jpg" class="img-noborder" alt=""></div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
         </div>
 
 
@@ -343,7 +298,24 @@
         </div>
     </div>
 </footer>
-
+<div id="myPriceList" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Modal header</h3>
+    </div>
+    <div class="modal-body">
+        <table class="table-bordered">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
 </body>
 
 </html>
